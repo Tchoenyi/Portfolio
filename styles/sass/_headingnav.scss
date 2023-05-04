@@ -1,0 +1,38 @@
+@use 'styleguide' as var;
+
+// Nav Section
+
+.navWrapper {
+    max-width: 70rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 40%;
+    li a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.navLinks li:last-child {
+    background: var.$yellow;
+    font-family: 'Nunito', sans-serif;
+    padding: 1rem 2rem;
+}
+
+// Hero Section
+
+.headingHero .wrapper {
+    h1 {
+        margin-top: 20%;
+    }
+}
