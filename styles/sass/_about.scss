@@ -1,5 +1,28 @@
 @use 'styleguide' as var;
 
 .aboutContainer {
+    background-color: var.$grey;
     margin-top: 5rem;
+   .wrapper {
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        li img {
+            background-color: var.$blue;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            align-self: center;
+            margin: 33px auto;
+            
+        }
+        .aboutImg {
+            display: flex;
+            height: 100%;
+            flex-basis: 25%;
+        }
+        .aboutText {
+            flex-basis: 70%;
+        }
+    }
 }

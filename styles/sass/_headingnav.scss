@@ -17,6 +17,7 @@
     align-items: center;
     list-style: none;
     width: 40%;
+    padding: 0;
     li a {
         text-decoration: none;
         color: black;
@@ -32,7 +33,14 @@
 // Hero Section
 
 .headingHero .wrapper {
+    background-image: url(/assets/HeroImg.png);
+    background-size: cover;
+    background-position-x: right 0;
+    height: 75vh;
     h1 {
-        margin-top: 20%;
+        padding-top: 60px;
+    }
+    h2 {
+        margin-top: 0.5rem;
     }
 }

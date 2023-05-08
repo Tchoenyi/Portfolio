@@ -1,0 +1,33 @@
+@use 'styleguide' as var;
+
+.skillsContainter {
+    padding: 100px 0;
+    background-color: var.$darkBlue;
+    color: white;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .skillsText {
+        flex-basis: 25%;
+        align-self: center;
+    }
+    .skillsList {
+        flex-basis: 70%;
+        display: flex;
+        justify-content: space-between;
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+            align-items: center;
+            line-height: 1.75rem;
+            li {
+                color: var.$yellow;
+            }
+        }
+    }
+}
+
+span {
+    color: white;
+}
