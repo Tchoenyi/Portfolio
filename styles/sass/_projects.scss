@@ -5,3 +5,24 @@
         margin: 100px 0;
     }
 }
+
+.projectsList  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    
+    img {
+        width: 100%;
+        flex-basis: 50%;
+        border: 2px var.$grey solid;
+    }
+    .projectsTextDiv {
+        flex-basis: 45%;
+        span{
+            color: var.$darkBlue;
+        }
+        button {
+            margin-right: 10px;
+        }
+    }
+}

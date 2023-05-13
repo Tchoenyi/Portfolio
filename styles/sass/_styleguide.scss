@@ -25,14 +25,38 @@ h2 {
 
 img {
     max-width: 100%;
+    width: 100%;
 }
 ul {
     list-style: none;
     padding-left: 0;
 }
 
-
 p {
     line-height: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: $black;
+    font-family: $baseFont;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    background-color: $yellow;
+    padding: 10px 40px;
+    transition-duration: 0.5s;
+    border: 2px $yellow solid;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $black;
+    border: 2px $yellow solid;
+    a {
+        color: $grey;
+        text-decoration: none;
+    }
+}

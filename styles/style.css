@@ -281,6 +281,7 @@ h2 {
 
 img {
   max-width: 100%;
+  width: 100%;
 }
 
 ul {
@@ -290,6 +291,32 @@ ul {
 
 p {
   line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #2a3033;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  background-color: #fbaf01;
+  padding: 10px 40px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  border: 2px #fbaf01 solid;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2a3033;
+  border: 2px #fbaf01 solid;
+}
+button:hover a {
+  color: #e7e8ee;
+  text-decoration: none;
 }
 
 .navWrapper {
@@ -427,4 +454,104 @@ span {
 
 .projectsContainer h1 {
   margin: 100px 0;
+}
+
+.projectsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+.projectsList img {
+  width: 100%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border: 2px #e7e8ee solid;
+}
+.projectsList .projectsTextDiv {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+.projectsList .projectsTextDiv span {
+  color: #3d48ae;
+}
+.projectsList .projectsTextDiv button {
+  margin-right: 10px;
+}
+
+.contactContainer {
+  background-color: #dfe0fc;
+}
+.contactContainer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactContainer .wrapper .contactText {
+  margin: 100px auto;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.contactContainer .wrapper .contactForm {
+  margin: 100px auto;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactForm form label {
+  margin-bottom: 5px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.contactForm form input {
+  margin-bottom: 20px;
+  height: 40px;
+  color: #2a3033;
+  font-size: 20px;
+  border: none;
+}
+.contactForm form input[id=message] {
+  height: 150px;
+}
+.contactForm form button {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20;
+}
+.contactForm form button:hover {
+  color: #e7e8ee;
+}
+
+footer {
+  background-color: #3d48ae;
+}
+footer p {
+  margin: 0 0;
+  padding: 20px 0;
+  color: #e7e8ee;
 }
