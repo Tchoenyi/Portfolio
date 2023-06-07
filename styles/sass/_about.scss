@@ -1,28 +1,37 @@
 @use 'styleguide' as var;
 
 .aboutContainer {
-    background-color: var.$grey;
-    margin-top: 5rem;
-   .wrapper {
-        padding: 100px 0;
+    background-color: var.$pink;
+    padding: 100px 0;
+   .about {
+        margin-top: 50px;
+        margin-bottom: 50px;
         display: flex;
         justify-content: space-between;
-        li img {
-            background-color: var.$blue;
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-            align-self: center;
-            margin: 33px auto;
-            
-        }
         .aboutImg {
-            display: flex;
-            height: 100%;
             flex-basis: 25%;
+            align-self: center;
+            img {
+                border-radius: 10%;
+                width: 200px;
+            }
         }
         .aboutText {
+            align-self: center;
             flex-basis: 70%;
         }
     }
+}
+
+@media (max-width:1120px) {
+    .aboutContainer {
+        .about {
+            flex-direction: column;
+            .aboutImg {
+                margin-bottom: 50px;
+            }
+                
+        }
+    }
+    
 }
